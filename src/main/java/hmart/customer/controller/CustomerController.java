@@ -41,6 +41,7 @@ public class CustomerController {
         customer.setLevels(form.getLevels());
         customer.setJob(form.getJob());
         customer.setPoint(form.getPoint());
+
         customerService.join(customer);
         return "redirect:/";
     }
